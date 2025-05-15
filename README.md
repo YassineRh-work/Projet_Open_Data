@@ -12,7 +12,6 @@ L'objectif principal est de nettoyer les données, filtrer un indicateur spécif
 
 ## Technologies utilisées
 - Python (pandas, folium)
-- Jupyter Notebook / Scripts Python
 - Données CSV issues d'indicateurs de développement mondial
 
 ## Instructions d’utilisation
