@@ -4,13 +4,13 @@ import webbrowser
 import json
 
 # Load your filtered dataset
-df = pd.read_csv("indicateur_filtré_annees.csv")
+df = pd.read_csv(r"C:\Users\yassi\Desktop\APP5\Représentation_données\projet1\Projet_Open_Data\result\literacy_rate\literacy_rate_cleaned.csv")
 
 # Choose the year to visualize
-year = "2020"
+year = "2015"
 
 # Load GeoJSON
-with open("world-countries.json", "r", encoding="utf-8") as f:
+with open(r"C:\Users\yassi\Desktop\APP5\Représentation_données\projet1\Projet_Open_Data\sources\literacy_rate\world-countries.json", "r", encoding="utf-8") as f:
     geo_data = json.load(f)
 
 # Create a folium map centered globally
@@ -26,7 +26,7 @@ folium.Choropleth(
     fill_color="YlGnBu",
     fill_opacity=0.7,
     line_opacity=0.2,
-    legend_name=f"% Population aged 15–64 ({year})",
+    legend_name=f"% Educational attainment population 25+ ({year})",
 ).add_to(m)
 
 # Add country labels with tooltips
