@@ -26,7 +26,7 @@ folium.Choropleth(
     fill_color="YlGnBu",
     fill_opacity=0.7,
     line_opacity=0.2,
-    legend_name=f"% Educational attainment population 25+ ({year})",
+    legend_name=f"% GDP per capita ({year})",
 ).add_to(m)
 
 # Add country labels with tooltips

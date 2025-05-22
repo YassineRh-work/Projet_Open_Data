@@ -2,7 +2,7 @@ import pandas as pd
 
 # Lecture du fichier
 df = pd.read_csv(
-    r"C:\Users\yassi\Desktop\APP5\Représentation_données\projet1\Projet_Open_Data\sources\literacy_rate\API_SE.TER.CUAT.ST.ZS_DS2_en_csv_v2_93935.csv",
+    r"C:\Users\yassi\Desktop\APP5\Représentation_données\projet1\Projet_Open_Data\sources\gdp\API_NY.GDP.PCAP.KD.ZG_DS2_en_csv_v2_85132.csv",
     skiprows=3,
     sep=',',
     quotechar='"',
@@ -38,5 +38,5 @@ df = df.apply(fill_target_years_with_past_average, axis=1)
 df_final = df[colonnes_finales]
 
 # Sauvegarder le fichier final
-df_final.to_csv("literacy_rate_cleaned.csv", index=False)
+df_final.to_csv("gdp_cleaned.csv", index=False)
 print("✅ Fichier final sauvegardé sous 'indicateur_filtré_annees.csv'")
