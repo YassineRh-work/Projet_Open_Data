@@ -2,7 +2,7 @@ import pandas as pd
 
 # Lecture du fichier
 df = pd.read_csv(
-    r"C:\Users\yassi\Desktop\APP5\Représentation_données\projet1\Projet_Open_Data\sources\gdp\API_NY.GDP.PCAP.KD.ZG_DS2_en_csv_v2_85132.csv",
+    r"C:\Users\yassi\Desktop\APP5\Représentation_données\projet1\Projet_Open_Data\sources\gdp\API_NY.GDP.PCAP.CD_DS2_en_csv_v2_85121.csv",
     skiprows=3,
     sep=',',
     quotechar='"',
