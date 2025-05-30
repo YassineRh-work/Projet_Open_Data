@@ -53,6 +53,8 @@ pip install pandas numpy folium requests
 - Chouaib Skitou  
 - Hamoudia Camara  
 
+## Aperçu de la carte
+![Screenshot](https://github.com/YassineRh-work/Projet_Open_Data/tree/merging_files/exemple.png)
 
 
 
